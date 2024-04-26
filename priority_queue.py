@@ -22,6 +22,9 @@ class PriorityQueue():
         
         except IndexError:
             return
+        
+    def is_empty(self):
+        return len(self.queue) < 1
                 
     def __str__(self):
         return str(self.queue)
